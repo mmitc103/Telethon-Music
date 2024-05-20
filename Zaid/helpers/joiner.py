@@ -33,7 +33,7 @@ def AssistantAdd(mystic):
                     invitelink = invitelinkk.replace(
                         "https://t.me/+","https://t.me/joinchat/"
                     )
-                    await client(joinchat(invitelink))
+                    await client(ImportChatInviteRequest(invitelink))
                     await event.reply(
                         f"Joined Successfully",
                     )

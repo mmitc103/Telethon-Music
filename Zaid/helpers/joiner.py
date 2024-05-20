@@ -31,7 +31,7 @@ def AssistantAdd(mystic):
                     link = await event.client(ExportChatInviteRequest(event.chat_id))
                     invitelinkk = link.link
                     invitelink = invitelinkk.replace(
-                        "https://t.me/+"",
+                        "https://t.me/+",""
                     )
                     await client(ImportChatInviteRequest(invitelink))
                     await event.reply(

@@ -1,15 +1,15 @@
 import os
 
 class Config(object):
-    API_ID = int(os.environ.get("APP_ID", "6435225"))
-    API_HASH = os.environ.get("API_HASH", "4e984ea35f854762dcde906dce426c2d")
+    API_ID = int(os.environ.get("APP_ID", "24932123"))
+    API_HASH = os.environ.get("API_HASH", "112c5df5cf965ab22a7f8460a5026794")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     MANAGEMENT_MODE = os.environ.get("MANAGEMENT_MODE", True)
     HEROKU_MODE = os.environ.get("HEROKU_MODE", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-    SUPPORT = os.environ.get("SUPPORT", "TheSupportChat") # Your Support
-    CHANNEL = os.environ.get("CHANNEL", "TheUpdatesChannel") # Your Channel
+    SUPPORT = os.environ.get("SUPPORT", "NEETxDISCUSSION") # Your Support
+    CHANNEL = os.environ.get("CHANNEL", "aboutNEETxNOAH") # Your Channel
     START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/3d8ecee0ba7dddfc6fce4.jpg")
     CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/66518ed54301654f0b126.png")
     ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "")) # telegram I'd not Username

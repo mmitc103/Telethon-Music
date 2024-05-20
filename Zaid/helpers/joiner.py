@@ -31,9 +31,9 @@ def AssistantAdd(mystic):
                     link = await event.client(ExportChatInviteRequest(event.chat_id))
                     invitelinkk = link.link
                     invitelink = invitelinkk.replace(
-                        "https://t.me/+",""
+                        "https://t.me/+","https://t.me/joinchat/"
                     )
-                    await client(ImportChatInviteRequest(invitelink))
+                    await client(joinchat(invitelink))
                     await event.reply(
                         f"Joined Successfully",
                     )
@@ -43,6 +43,8 @@ def AssistantAdd(mystic):
                     await event.reply(
                         f"__Assistant Failed To Join__\n\n**Reason**: {e}"
                     )
-            
+        
+                    return
+        return await mystic(_, message)
 
     return wrapper

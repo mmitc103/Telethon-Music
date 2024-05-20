@@ -3,15 +3,15 @@ import os
 class Config(object):
     API_ID = int(24932123) #dont change
     API_HASH = "112c5df5cf965ab22a7f8460a5026794" #dont change 
-    BOT_TOKEN = "" #fill your telegram bot token
-    STRING_SESSION = "" #an Telethon Session 
+    BOT_TOKEN = "6824533441:AAGcO_b1fnjn9Nzf7DMbX2YFjXSeCa6kbC4" #fill your telegram bot token
+    STRING_SESSION = "1BVtsOLsBu4vPBmeiu9PCS0_UGgIx6PwC21e5lysKZk9KXoTYHVdDeSb2Ma9wH6thwFr5jZrF4Zi3KQYumLa8Iovi9aEv0FuKDmwIbP1P9rXGAVTEKan8VdaWSoTVHoevY_FlZoa4B7TRM_ivRDtDicZpDN6RhSCIul8NvrrtxzsYGnxhqQM7t0MltfHuAyEWWfZmt6T7aoZrCA-XzoHla7M9DkR_AWylAWQ4KtEnAIFLWvssrIoN-IoZUEUyREWbeca5SNwunZyEj7uBWLDtGx3VQX75ujPNmBiBl-kFxipG8v0ACDOq8bswWmg326FgmD5FN15lEscA0DBVyj8NYxzaOQxOxx8=" #an Telethon Session 
     MANAGEMENT_MODE = None #Dont change
     HEROKU_MODE = None #dont change
-    BOT_USERNAME = "Zaid2_Robot" #Your Bot username 
-    SUPPORT = "TheSupportChat" #optional
-    CHANNEL = "TheUpdatesChannel" #optional
+    BOT_USERNAME = "noahmusic2_bot" #Your Bot username 
+    SUPPORT = "NEETxDISCUSSION" #optional
+    CHANNEL = "aboutNEETxNOAH" #optional
     START_IMG = "https://telegra.ph/file/35a7b5d9f1f2605c9c0d3.png"
     CMD_IMG = "https://telegra.ph/file/66518ed54301654f0b126.png"
-    ASSISTANT_ID = int(1234567890) #your string added account user id..
+    ASSISTANT_ID = int(6360883549) #your string added account user id..
     AUTO_LEAVE_TIME = int(54000) # in seconds
     AUTO_LEAVE = True #Optional

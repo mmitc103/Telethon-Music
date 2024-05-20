@@ -43,37 +43,6 @@ def AssistantAdd(mystic):
                     await event.reply(
                         f"__Assistant Failed To Join__\n\n**Reason**: {e}"
                     )
-                    return
-        return await mystic(event)
-                if invitelink.startswith("https://t.me/+"):
-                    invitelink = invitelink.replace(
-                        "https://t.me/+", "https://t.me/joinchat/"
-                    )
-                myu = await message.reply_text(_["call_4"].format(app.mention))
-                try:
-                    await asyncio.sleep(1)
-                    await userbot.join_chat(invitelink)
-                except InviteRequestSent:
-                    try:
-                        await app.approve_chat_join_request(chat_id, userbot.id)
-                    except Exception as e:
-                        return await message.reply_text(
-                            _["call_3"].format(app.mention, type(e).__name__)
-                        )
-                    await asyncio.sleep(3)
-                    await myu.edit(_["call_5"].format(app.mention))
-                except UserAlreadyParticipant:
-                    pass
-                except Exception as e:
-                    return await message.reply_text(
-                        _["call_3"].format(app.mention, type(e).__name__)
-                    )
-
-                links[chat_id] = invitelink
-
-                try:
-                    await userbot.resolve_peer(chat_id)
-                except:
-                    pass
+            
 
     return wrapper
